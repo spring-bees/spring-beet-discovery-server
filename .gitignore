@@ -1,0 +1,14 @@
+# idea
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# maven
+target/
+*.releaseBackup
+
+# spring beet
+logs/
+**/memory:masterdb?cache=shared
