@@ -16,12 +16,15 @@
 
 server:
   port: 50000
-
+spring:
+  cloud:
+    discovery:
+      enabled: true
 eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${server.host}:${server.port}/eureka
+      defaultZone: http://${server.address}:${server.port}/eureka
   server:
     enableSelfPreservation: true
